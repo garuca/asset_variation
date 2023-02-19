@@ -4,7 +4,7 @@ import 'package:asset_variation/feature/stock/history/domain/repositories/stock_
 import 'package:dartz/dartz.dart';
 
 abstract class GetStockHistory {
-  Future<Either<Failure, StockHistory>> call();
+  Future<Either<Failure, StockHistory?>> call();
 }
 
 class GetStockHistoryImpl implements GetStockHistory {
@@ -13,7 +13,7 @@ class GetStockHistoryImpl implements GetStockHistory {
   GetStockHistoryImpl(this.repository);
 
   @override
-  Future<Either<Failure, StockHistory>> call() async {
+  Future<Either<Failure, StockHistory?>> call() async {
     return repository.get();
   }
 }
