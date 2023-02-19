@@ -2,8 +2,6 @@ import 'package:asset_variation/feature/stock/history/domain/entities/stock_hist
 import 'package:asset_variation/feature/stock/history/domain/errors/errors.dart';
 import 'package:dartz/dartz.dart';
 
-
-
 abstract class StockHistoryRepository {
   Future<Either<Failure, StockHistory>> get();
 }
