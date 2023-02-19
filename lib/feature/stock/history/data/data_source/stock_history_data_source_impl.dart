@@ -16,7 +16,7 @@ class StockHistoryDataSourceImpl implements StockHistoryDataSource {
     const String apiComplement = "v8/finance/chart/PETR4.SA";
 
     var response = await http.get(Uri.https(baseUrl, apiComplement, {
-      "interval": "30d",
+      "interval": "1d",
       "range": "30d",
     }));
     final decoded = jsonDecode(response.body);
