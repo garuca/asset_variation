@@ -39,6 +39,10 @@ lib
   - Usado para auxilar no tratamento de erros.
 - get:
   - Principal gerenciamento de estado da aplicação
+- fl_chart
+- intl
+- tuple
+- http
 
 ## Dispositivos usados nos testes
 - Android:
