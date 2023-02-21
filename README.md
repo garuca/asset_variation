@@ -37,16 +37,8 @@ lib
 ## Libs
 - dartz:
   - Usado para auxilar no tratamento de erros.
-- web_socket_channel:
-  - Usado para conecções websocket
-- mockito:
-  - Usado para mocar os dados nos testes unitários
-- flutter_bloc:
+- get:
   - Principal gerenciamento de estado da aplicação
-- get_it:
-  - Injeção de dependências
-- flutter_svg:
-  - Usado para renderizar imagens svg
 
 ## Dispositivos usados nos testes
 - Android:
