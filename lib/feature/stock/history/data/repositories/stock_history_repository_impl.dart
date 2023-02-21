@@ -11,11 +11,7 @@ class StockHistoryRepositoryImpl implements StockHistoryRepository {
 
   @override
   Future<Either<Failure, StockHistory?>> get() async {
-    try {
-      final result = await dataSource.get();
-      return result;
-    } catch (e) {
-      return Left(DataSourceError());
-    }
+    final result = await dataSource.get();
+    return result;
   }
 }

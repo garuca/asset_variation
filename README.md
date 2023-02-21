@@ -1,16 +1,56 @@
-# asset_variation
+# Toro APP
+## Rodar o projeto
+Para rodar o projeto basta instalar o flutter (seguir passos da documentação oficial) em seguida clonar o projeto, e na pasta rais do projeto executar o comando flutter rum.
 
-A new Flutter project.
+## Screens
+Intro             |                       Login                       |                 
+:-------------------------:|:-------------------------------------------------:
+<img src="./print1.png" width="180" height="320">  | <img src="./print2.png" width="180" height="320">
+## Funcionalidades
+- Tela de escolha
+- Tela de tabela
+- Tela do grafico
 
-## Getting Started
+## Estrutura de pastas
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+```  
+lib  
+└───reference  
+│   └───features  
+│   │   └───feature1  
+│   │   │   └───sub_feature  
+│   │   │   └───data  
+│   │   │   └───domain  
+│   │   │   └───presenter  
+│   │   └───feature2  
+│   │  	│   └───sub_feature  
+│   │  	│   └───data  
+│   │  	│   └───domain  
+│   │  	│   └───presenter  
+│   app_module.dart  
+│   app_widget.dart 
+│   main.dart
+```  
+## Arquitetura do projeto
+-   Clean Architecture
+## Libs
+- dartz:
+  - Usado para auxilar no tratamento de erros.
+- web_socket_channel:
+  - Usado para conecções websocket
+- mockito:
+  - Usado para mocar os dados nos testes unitários
+- flutter_bloc:
+  - Principal gerenciamento de estado da aplicação
+- get_it:
+  - Injeção de dependências
+- flutter_svg:
+  - Usado para renderizar imagens svg
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Dispositivos usados nos testes
+- Android:
+  -  Moto G5
+  -  Pixel 2 (Emulador)
+- IOS:
+  -  Não testado
